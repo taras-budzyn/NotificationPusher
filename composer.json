@@ -15,13 +15,19 @@
             "homepage": "https://github.com/Ph3nol/NotificationPusher/contributors"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/taras-budzyn/ZendService_Apple_Apns"
+        }
+    ],
     "require": {
         "php": ">=5.5",
 
         "symfony/options-resolver": "~2.3",
         "symfony/console": "~2.3",
         "symfony/process": "~2.3",
-        "zendframework/zendservice-apple-apns": "1.3.0",
+        "zendframework/zendservice-apple-apns": "dev-return_to_legacy_php",
         "zendframework/zendservice-google-gcm": "1.*",
         "doctrine/inflector": "~1.0"
     },
