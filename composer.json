@@ -28,12 +28,12 @@
         "symfony/console": "~2.3",
         "symfony/process": "~2.3",
         "zendframework/zendservice-apple-apns": "dev-return_to_legacy_php",
-        "zendframework/zendservice-google-gcm": "1.*",
+        "zendframework/zendservice-google-gcm": "2.0.0",
         "doctrine/inflector": "~1.0"
     },
     "minimum-stability": "dev",
     "require-dev": {
-        "atoum/atoum": "dev-master"
+        "atoum/atoum": "2.9.0"
     },
     "config": {
         "bin-dir": "bin"
