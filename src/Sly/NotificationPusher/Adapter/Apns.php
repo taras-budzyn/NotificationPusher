@@ -234,7 +234,7 @@ class Apns extends BaseAdapter
         }
 
         if (null !== $apnsPushType) {
-            $serviceMessage->setApnsPushType(apnsPushType);
+            $serviceMessage->setApnsPushType($apnsPushType);
         }
 
         return $serviceMessage;
