@@ -169,6 +169,8 @@ class Apns extends BaseAdapter
         $contentAvailable = $message->getOption('content-available');
         $category = $message->getOption('category');
         $mutableContent   = $message->getOption('mutable-content');
+        $apnsPriority = $message->getOption('apns-priority');
+        $apnsPushType = $message->getOption('apns-push-type');
 
         $alert = new ServiceAlert(
             $message->getText(),
@@ -225,6 +227,14 @@ class Apns extends BaseAdapter
 
         if (null !== $mutableContent) {
             $serviceMessage->setMutableContent($mutableContent);
+        }
+
+        if (null !== $apnsPriority) {
+            $serviceMessage->setApnsPriority($apnsPriority);
+        }
+
+        if (null !== $apnsPushType) {
+            $serviceMessage->setApnsPushType(apnsPushType);
         }
 
         return $serviceMessage;
